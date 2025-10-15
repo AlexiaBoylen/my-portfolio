@@ -20,25 +20,55 @@
 
   <main id="welcome" class="section">
     <h2>Welcome</h2>
-    <p>Hello and welcome to my portfolio! This site is a space where I share my work and practice web development.</p>
+    <p>Hello and welcome to my portfolio! This site showcases my projects, coursework, and personal explorations in computer science. It’s a place where I document my progress and share what I’ve been learning across programming, software development, and problem-solving.</p>
     <p>Use the buttons above to explore my projects, learn about me, or get in touch.</p>
   </main>
 
-<hr class ="divider" />
+  <hr class="divider" />
 
   <section id="about" class="section">
     <h2>About</h2>
-    <p>Hi, my name is Alexia Boylen and I am currently a student at Humber College, enrolled in the Computer Programming and Analysis program. Through my sutdies, I am gaining experience with coding, software developemnt, and building practical projects that strengthen my skills. I'm exited to continue developing my knowledge in programming and to share my progress through this portfolio. </p>
+    <p>My name is Alexia Boylen and I am currently a student at Humber College, enrolled in the Computer Programming and Analysis program. Through my studies, I am gaining experience with coding, software development, and building practical projects that strengthen my skills. I'm excited to continue developing my knowledge in programming and to share my progress through this portfolio.</p>
   </section>
 
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <p>Placeholder for project information.</p>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Project One</h3>
+        <p>Coming soon...</p>
+        <a class="project-link" href="#">View</a>
+      </article>
+      <article class="project-card">
+        <h3>Project Two</h3>
+        <p>Coming soon...</p>
+        <a class="project-link" href="#">View</a>
+      </article>
+      <article class="project-card">
+        <h3>Project Three</h3>
+        <p>Coming soon...</p>
+        <a class="project-link" href="#">View</a>
+      </article>
+    </div>
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Placeholder for contact details.</p>
+    <form class="contact-form" action="#" method="post" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="What would you like to say?" required></textarea>
+      </div>
+      <button type="submit" class="btn-send">Send Message</button>
+    </form>
   </section>
 
   <footer>
