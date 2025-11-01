@@ -290,4 +290,13 @@ nav ul li a {
     justify-self: stretch;
     text-align: center;
   }
+  .error-message {
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+input.invalid,
+textarea.invalid {
+  border: 2px solid #c0392b;
+}
 }
