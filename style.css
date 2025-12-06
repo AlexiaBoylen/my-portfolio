@@ -2,7 +2,9 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background-color: #f6f6f6;
+    background-image: radial-gradient(#d0d0d0 1px, transparent 1px);
+    background-size: 20px 20px;
     color: #464141;
 }
 
@@ -10,10 +12,11 @@ header {
     background: #ffffff;
     padding: 28px 0 18px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    border-radius: 0 0 16px 16px;
-    max-width: 1100px;
-    margin: 0 auto;
+    max-width: 900px;
+    margin: 24px auto;
+    border: 2px solid #000;
+    border-radius: 18px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
 }
 
 header h1 {
@@ -39,11 +42,11 @@ nav ul {
 
 nav ul li a {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 8px 20px;
     background: #ffffff;
-    border-radius: 999px;
-    border: 1px solid #e0e0e0;
-    color: #464141;
+    border-radius: 14px;
+    border: 2px solid #000;
+    color: #000;
     text-decoration: none;
     font-size: 0.95rem;
     transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
@@ -65,9 +68,9 @@ section {
 .about-card {
     background: #ffffff;
     padding: 24px;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 18px;
+    border: 2px solid #000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
 }
 
 .section h2 {
@@ -85,9 +88,10 @@ section {
 .project-card {
     background: #ffffff;
     padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    border: 2px solid #000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+    text-align: center;
 }
 
 .project-card h3 {
@@ -120,16 +124,16 @@ section {
 }
 
 .contact-form {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 18px;
+    border: 2px solid #000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px 20px;
     max-width: 900px;
     margin: 0 auto;
-    background: #ffffff;
-    padding: 24px;
-    border-radius: 12px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .contact-form .form-row {
@@ -153,16 +157,19 @@ section {
     border-radius: 6px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: #464141;
-    box-shadow: 0 0 0 2px rgba(70,65,65,0.2);
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 2px solid #000;
+    background: #fff;
+    color: #333;
+    font: inherit;
+    border-radius: 10px;
 }
 
 .btn-send {
-    grid-column: 1 / -1;
-    justify-self: end;
+    grid-column: 1 / -1; 
+    justify-self: end; 
     padding: 10px 20px;
     border-radius: 999px;
     border: none;
@@ -185,12 +192,11 @@ footer {
   margin: 40px auto;
   background: #ffffff;
   padding: 20px;
-  border-radius: 12px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  border: 2px solid #000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+  display: block;
   text-align: center;
-  color: #464141;
-  font-size: 1rem;
 }
 
 .error-message {
